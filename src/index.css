@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-50: #fbfaf3;
+  --color-gold-100: #f5f2ed;
+  --color-gold-200: #e9e2d5;
+  --color-gold-300: #d4c4a8;
+  --color-gold-400: #bfa67b;
+  --color-gold-500: #a68b59;
+  --color-gold-600: #8c7146;
+  --color-gold-700: #735a39;
+  --color-gold-800: #59452d;
+  --color-gold-900: #403221;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+body {
+  @apply bg-gold-100 text-stone-900 font-sans antialiased;
+}
+
+.premium-card {
+  @apply bg-white border border-gold-200 shadow-sm rounded-sm;
+}
+
+.premium-button {
+  @apply bg-stone-900 text-gold-100 px-8 py-3 rounded-sm font-medium tracking-widest uppercase text-xs transition-all hover:bg-stone-800 active:scale-95 disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.premium-input {
+  @apply w-full bg-transparent border-b border-gold-300 py-2 focus:border-gold-600 outline-none transition-colors font-serif text-lg italic;
+}
+
+.premium-label {
+  @apply text-[10px] uppercase tracking-[0.2em] text-gold-600 font-semibold mb-1 block;
+}
